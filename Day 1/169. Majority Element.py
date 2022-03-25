@@ -55,7 +55,7 @@ Approach 3: We can use Boyer-Moore Algorithm. This takes O(n) time Complexity an
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         def findMajority(arr,n):
-            major_element=0
+            major_element=arr[0]
             count=1
             for i in range(n):
                 if arr[i]==major_element:
