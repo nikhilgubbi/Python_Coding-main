@@ -32,7 +32,7 @@ Approach 1: We can use have Naive solution. It takes time complexity of O(n^2) a
                     count elements
 Approach 2: We can use hashtable to solve this. It takes O(n) time complexity but takes O(n) space complexity.
 
-Approach 3: We can use Boyer-Moore Algorithm
+Approach 3: We can use Boyer-Moore Algorithm. This takes O(n) time Complexity and O(1) Space Complexity
             Algo:
             Boyer_Moore(Arr,n):
                 int majority_ele
