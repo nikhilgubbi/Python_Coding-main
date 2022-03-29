@@ -51,10 +51,10 @@ class Solution:
         array_length = len(nums) #Compute length
         target = []  #Create Target array
         for i in range(array_length):
-            if index[i] > array_length:
-                target.append(nums[i])
+            if index[i] > array_length: #Check if the indexes in index array are greater than length of the given array
+                target.append(nums[i]) #if so, append them at the last index of nums array
             else:
-                target.insert(index[i],nums[i])
+                target.insert(index[i],nums[i]) #Else insert the corresponding array elements into the target array
         return target
         
 #This takes O(n) time Complexity and O(n) Space Complexity
