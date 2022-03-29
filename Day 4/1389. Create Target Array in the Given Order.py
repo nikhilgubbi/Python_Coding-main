@@ -57,4 +57,4 @@ class Solution:
                 target.insert(index[i],nums[i]) #Else insert the corresponding array elements into the target array
         return target
         
-#This takes O(n) time Complexity and O(n) Space Complexity
+#This takes O(n^2) time Complexity and O(n) Space Complexity
