@@ -23,6 +23,7 @@ Input: nums = [1], target = 0
 Output: -1
 
 Approach:
+    Algo:
     We can use Binary search to solve this problem. It Takes O(nlogn) TIme Complexity and O(1) Space Complexity.
 
 
