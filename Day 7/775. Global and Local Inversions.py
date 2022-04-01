@@ -48,6 +48,10 @@ Approach 2: We can use variation of Mergesort. This takes O(nlogn) Time Complexi
 '''
 class Solution:
     def isIdealPermutation(self, A: List[int]) -> bool:
-        for i in range(len(A)):
-            if i - A[i] > 1 or i - A[i] < -1: return False
+        c=A[0]       
+        for i in range(len(A)-2):
+            if A[i] > c:
+                c=A[i]
+            if c > A[i+2]:
+                return False 
         return True
