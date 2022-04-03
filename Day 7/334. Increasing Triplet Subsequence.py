@@ -25,10 +25,23 @@ Constraints:
 1 <= nums.length <= 5 * 105
 -231 <= nums[i] <= 231 - 1
 
-Approach 1: Bruteforce Approach
+Approach 1: Bruteforce Approach 
+    Algo:
+        for i = 0 to n-1:
+            for j =0 to i-1:
+                find if there exists a[num] < a[i]
+            for j =i +1 to n-1:
+                find an element > a[i]
 
+    This takes O(n^2) Time Complexity and O(1) Space Complexity
 
-        
+Approach 2:
+    Algo:
+        Start with maximum numbers for first and second element
+            Find the first smallest number in the three subsequence
+            Find the second one greater than the first element, reset the first one if its smaller.
+
+    This takes O(n) Time Complexity and O(1) Space Complexity    
 '''
 
 class Solution:
