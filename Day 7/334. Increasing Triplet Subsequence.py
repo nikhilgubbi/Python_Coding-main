@@ -35,6 +35,23 @@ Approach 1: Bruteforce Approach
 
     This takes O(n^2) Time Complexity and O(1) Space Complexity
 
+Approach 3:
+    Algo 
+        Find Triplet(A,n):
+            if n<3 return Null
+            min_index = 0
+            low = mid = -1
+            for i = 1 to n-1:
+                if A[i] <A[min_index]:
+                    min_index = i
+                else if mid = -1:
+                    low = min_index
+                    mid = i
+                else if A[i] <=a[mid]:
+                    low = min_index
+                    mid = i
+                else:
+                    
 Approach 2:
     Algo:
         Start with maximum numbers for first and second element
