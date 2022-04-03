@@ -51,7 +51,7 @@ Approach 3:
                     low = min_index
                     mid = i
                 else:
-                    
+                    return (A[low],A[mid],A[i])
 Approach 2:
     Algo:
         Start with maximum numbers for first and second element
